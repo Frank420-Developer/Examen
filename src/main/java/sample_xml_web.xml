@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><requisition>
+  <contractName>Contrato Banca</contractName>
+  <acceptanceLegend>Yo NombreDelFirmante acepto firmar NombreDelDocumento, hoy FechaDeFirma.</acceptanceLegend>
+  <validity>5</validity>
+  <contractType>Contrato</contractType>
+  <signOnWeb>true</signOnWeb>
+  <certificate>
+    <page>1</page>
+    <positionX1>8.48066</positionX1>
+    <positionX2>88.48066</positionX2>
+    <positionY1>78.4089</positionY1>
+    <positionY2>90.53880000000001</positionY2>
+  </certificate>
+    <signers>
+      <signerName>APURALEEEE WEE</signerName>
+      <mail>onunez@na-at.com.mx</mail>
+      <phone>+5211234567890</phone>
+      <signDevicePhone>+5211234567890</signDevicePhone>
+      <authenticationType>Código de seguridad</authenticationType>
+      <authenticationData>2345</authenticationData>
+      <order>1</order>
+        <signatures>
+          <centerX>68.3702</centerX>
+          <centerY>34.4741</centerY>
+          <page>1</page>
+          <positionX1>56.5608</positionX1>
+          <positionX2>80.1796</positionX2>
+          <positionY1>31.6991</positionY1>
+          <positionY2>37.2491</positionY2>
+          <signerType>Firmante</signerType>
+        </signatures>
+    </signers> 
+</requisition>

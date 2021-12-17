@@ -1,0 +1,45 @@
+server:
+  port: 8080
+spring:
+  profiles:
+    active: dev
+  sql:
+    init:
+      mode: always
+    properties:
+      hibernate:
+        format_sql: true
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+  datasource:
+    password: na@ttech2021
+    url: jdbc:postgresql://localhost:5432/FADexamen
+    username: user_admin
+    driver-class-name: org.postgresql.Driver
+  apifad:
+    urls:
+      url-base: https://uat.firmaautografa.com/
+      url-login: authorization-server/oauth/token
+      url-createSign: requisitions/createRequisicionB2C
+      url-getDetail: requisitions/info/
+    doLogin:
+      grantType: password
+      username: testft@na-at.com.mx
+      password: c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646
+      basicAuth:
+        username: ZmFkLWMyYy1wb3J0YWw=
+        password: MjhkN2Q3MmJiYTVmZGM0NmYxZjdkYWJjYmQ2NjA1ZDUzZTVhOWM1ZGU4NjAxNWUxODZkZWFiNzMwYTRmYzUyYg==
+    createSign: 
+      hash: a9446ff41675be3f153e121d1fd34ac6adde245612a0d3ff9e279662969050b2
+      xmlUrl: src/main/java/sample_xml_web.xml
+      pdfUrl: src/main/java/sample_pdf.pdf
+
