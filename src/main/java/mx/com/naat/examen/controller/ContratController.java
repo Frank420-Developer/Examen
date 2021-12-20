@@ -22,7 +22,7 @@ import mx.com.naat.examen.domain.data.CreateSignDto;
 import mx.com.naat.examen.infrastructure.entity.Contrat;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/fad/")
 public class ContratController {
 
 	@Autowired

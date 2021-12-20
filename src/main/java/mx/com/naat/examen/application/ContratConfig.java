@@ -24,16 +24,13 @@ public class ContratConfig {
 		return new ContratServiceImpl(contratPersistance());
 	}
 
-	@Bean
-	public WebMvcConfigurer corsConfigurer() {
-		return new WebMvcConfigurer() {
-			@Override
-			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**")
-				.allowedOrigins("*")
-				.allowedMethods("GET", "PUT", "POST", "PATCH", "DELETE", "OPTIONS");
-			}
-		};
-	}
+	
+	  @Bean public WebMvcConfigurer corsConfigurer() { return new
+	  WebMvcConfigurer() {
+	  
+	  @Override public void addCorsMappings(CorsRegistry registry) {
+	  registry.addMapping("/**") .allowedOrigins("*") .allowedMethods("GET", "PUT",
+	 "POST", "PATCH", "DELETE", "OPTIONS"); } }; }
+	 
 	
 }
