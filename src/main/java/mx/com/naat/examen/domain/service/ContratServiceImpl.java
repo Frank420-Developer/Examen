@@ -154,7 +154,6 @@ public class ContratServiceImpl implements ContratServicePort {
     	
     	Contrat contrato = new Contrat(response.getBody().getData().getRequisitionId(), response.getBody().getData().getTicket());
     	contratPersistancePort.saveContrat(contrato);
-    	//System.out.println(contrato);
 		return response.getBody();
     	
 		

@@ -13,9 +13,9 @@
   </certificate>
     <signers>
       <signerName>Francisco Vera</signerName>
-      <mail>naat_tech@naat.com</mail>
-      <phone>+5211234567890</phone>
-      <signDevicePhone>+5211234567890</signDevicePhone>
+      <mail>fvera@na-at.com.mx</mail>
+      <phone>+5215537182577</phone>
+      <signDevicePhone>+5215537182577</signDevicePhone>
       <authenticationType>Código de seguridad</authenticationType>
       <authenticationData>2345</authenticationData>
       <order>1</order>

@@ -3,8 +3,6 @@ package mx.com.naat.examen.application;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import mx.com.naat.examen.domain.api.ContratServicePort;
 import mx.com.naat.examen.domain.service.ContratServiceImpl;
@@ -25,12 +23,13 @@ public class ContratConfig {
 	}
 
 	
-	  @Bean public WebMvcConfigurer corsConfigurer() { return new
-	  WebMvcConfigurer() {
-	  
-	  @Override public void addCorsMappings(CorsRegistry registry) {
-	  registry.addMapping("/**") .allowedOrigins("*") .allowedMethods("GET", "PUT",
-	 "POST", "PATCH", "DELETE", "OPTIONS"); } }; }
-	 
+	/*
+	 * @Bean public WebMvcConfigurer corsConfigurer() { return new
+	 * WebMvcConfigurer() {
+	 * 
+	 * @Override public void addCorsMappings(CorsRegistry registry) {
+	 * registry.addMapping("/**") .allowedOrigins("*") .allowedMethods("GET",
+	 * "PUT","POST", "PATCH", "DELETE", "OPTIONS"); } }; }
+	 */
 	
 }

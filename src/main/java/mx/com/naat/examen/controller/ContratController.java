@@ -37,8 +37,6 @@ public class ContratController {
 		long totalElements = contratServicePort.countRegisters();
 		hr.add("Total-Elements", String.valueOf(totalElements));
 		
-		System.out.println(totalElements);
-		
 		return new ResponseEntity<>(contratos, hr, HttpStatus.OK);
 	}
 
